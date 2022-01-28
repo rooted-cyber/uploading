@@ -1,9 +1,9 @@
 fse() {
 printf "\n Updating packages\n"
-apt update
-apt upgrade
-apt-get update
-apt-get upgrade
+#apt update
+#apt upgrade
+#apt-get update
+#apt-get upgrade
 apt install --fix-broken
 for a in python nodejs git figlet toilet wget;do
 printf "\n Installing packages\n"
@@ -39,6 +39,9 @@ dpkg -i Random*
 fi
 }
 fse
+random
+printf "\n Login again in heroku\n"
+heroku login -i
 cd ~
 mkdir new-$RANDOM-mirror
 cd new*mirror
