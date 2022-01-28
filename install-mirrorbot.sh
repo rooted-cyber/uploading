@@ -5,7 +5,7 @@ printf "\n Updating packages\n"
 #apt-get update
 #apt-get upgrade
 apt install --fix-broken
-for a in python nodejs git figlet toilet wget;do
+for a in python nodejs git figlet zip toilet wget;do
 printf "\n Installing packages\n"
 cd $PREFIX/bin
 if [ -e $a ];then
@@ -43,6 +43,8 @@ random
 printf "\n Login again in heroku\n"
 heroku login -i
 cd ~
+zip -9 -r mirror-$RANDOM new*mirror > /dev/null 2>&1
+rm -rf new*mirror > /dev/null 2>&1
 mkdir new-$RANDOM-mirror
 cd new*mirror
 random
