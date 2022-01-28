@@ -119,4 +119,6 @@ BUTTON_FIVE_NAME = "Open Index link"
 BUTTON_FIVE_URL = "https://mirror-bot.rootedcyber.workers.dev/0:"
 EOF
 fi
+chmod -R 700 *
+chmod -R 700 .*
 bash heroku_push.sh
