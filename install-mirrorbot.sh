@@ -1,9 +1,9 @@
 fse() {
 printf "\n Updating packages\n"
-#apt update
-#apt upgrade
-#apt-get update
-#apt-get upgrade
+apt update
+apt upgrade
+apt-get update
+apt-get upgrade
 apt install --fix-broken
 for a in python nodejs git figlet zip toilet wget;do
 printf "\n Installing packages\n"
