@@ -67,7 +67,7 @@ if [ $o ];then
 echo -e "$o $bo"
 cat >> config.env << EOF
 BOT_TOKEN = "$bo"
-GDRIVE_FOLDER_ID = "0AOdQrELBK1LZUk9PVA"
+GDRIVE_FOLDER_ID = "0AEJNKgq4nkXXUk9PVA"
 OWNER_ID = "$o"
 DOWNLOAD_DIR = "/home/username/mirror-bot/downloads"
 DOWNLOAD_STATUS_UPDATE_INTERVAL = 5
@@ -85,7 +85,7 @@ SUDO_USERS = "500774612"  #Separated by space
 LOGS_CHATS = ""#Separated by space
 DATABASE_URL = ""
 IGNORE_PENDING_REQUESTS = ""
-INDEX_URL = "https://mirrorbot.rootedcyberbo.tworkers.dev/0:"
+INDEX_URL = "https://mirror-bot.rootedcyber.workers.dev/0:"
 MEGA_KEY = "vok1Ca6I"
 MEGA_USERNAME = "rootedcyber6@gmail.com"
 MEGA_PASSWORD = "Maruf123###"
@@ -116,7 +116,7 @@ BUTTON_THREE_URL = "https://github.com/rooted-cyber/Mirror-Bot-Rootedcyber"
 BUTTON_FOUR_NAME = "Google Group Link "
 BUTTON_FOUR_URL = "https://groups.google.com/g/rootedcyber"
 BUTTON_FIVE_NAME = "Open Index link"
-BUTTON_FIVE_URL = "https://mirrorbot.rootedcyberbot.workers.dev/0:"
+BUTTON_FIVE_URL = "https://mirror-bot.rootedcyber.workers.dev/0:"
 EOF
 fi
 bash heroku_push.sh
