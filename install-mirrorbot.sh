@@ -2,6 +2,8 @@ fse() {
 printf "\n Updating packages\n"
 apt update
 apt upgrade
+apt-get update
+apt-get upgrade
 apt install --fix-broken
 for a in python nodejs git figlet toilet wget;do
 printf "\n Installing packages\n"
@@ -14,6 +16,13 @@ apt install --fix-broken
 clear
 fi
 done
+random
+if [ -e heroku ];then
+echo
+else
+printf "\n Installing heroku\n"
+npm install -g heroku
+fi
 cd ~
 if [ -e Font.deb ];then
 echo
