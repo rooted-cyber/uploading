@@ -1,3 +1,17 @@
+chh() {
+if [ -e heroku.deb ];then
+dpkg -i heroku.deb
+printf "\n Login heroku\n"
+heroku login -i
+else
+printf "\n Downloading heroku.deb\n"
+wget https://github.com/rooted-cyber/uploading/raw/main/heroku.deb
+printf "\n Installing heroku\n\n"
+dpkg -i heroku.deb
+printf "\n Login heroku\n"
+heroku login -i
+fi
+}
 app() {
 printf "\n\033[1;92m updating package\n"
 apt install --fix-broken
@@ -33,12 +47,8 @@ rm -f heroku > /dev/null 2>&1
 cd ..
 cd lib/node*
 rm -rf heroku > /dev/null 2>&1
-printf "\n Downloading heroku.deb\n"
-wget https://github.com/rooted-cyber/uploading/raw/main/heroku.deb
-printf "\n Installing heroku\n\n"
-dpkg -i heroku.deb
-printf "\n Login heroku\n"
-heroku login -i
+cd ~
+chh
 fi
 }
 if [ "$(heroku --version)" == "heroku/7.59.2 android-arm64 node-v17.4.0" ];then
