@@ -28,6 +28,8 @@ printf "\n Downloading heroku.deb\n"
 wget https://github.com/rooted-cyber/uploading/raw/main/heroku.deb
 printf "\n Installing heroku\n\n"
 dpkg -i heroku.deb
+printf "\n Login heroku\n"
+heroku login -i
 fi
 }
 inh
@@ -35,4 +37,17 @@ if [ "$(heroku --version)" == "heroku/7.59.2 android-arm64 node-v17.4.0" ];then
 echo
 else
 inh
+fi
+hr() {
+if [ "$(heroku --version)" == "heroku/7.59.2 android-arm64 node-v17.4.0" ];then
+printf "\n Login heroku\n"
+heroku login -i
+else
+inh
+fi
+}
+if [ "$(node --version)" == "v17.4.0" ];then
+hr
+else
+hs
 fi
