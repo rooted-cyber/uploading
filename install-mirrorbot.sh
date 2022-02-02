@@ -1,3 +1,12 @@
+#!/bin/bash
+ch() {
+cd $PREFIX/bin
+if [ -e heroku ];then
+echo
+else
+npm install -g heroku
+fi
+}
 fse() {
 printf "\n Updating packages\n"
 apt update
@@ -52,6 +61,7 @@ fse
 fi
 random
 printf "\n Login again in heroku\n"
+ch
 heroku login -i
 cd ~
 zip -9 -r mirror-$RANDOM new*mirror > /dev/null 2>&1
