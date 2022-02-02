@@ -14,7 +14,6 @@ apt upgrade
 apt install --fix-broken
 apt install nodejs || apt reinstall nodejs
 }
-hs
 if [ "$(node --version)" == "v17.4.0" ];then
 echo
 else
@@ -42,7 +41,6 @@ printf "\n Login heroku\n"
 heroku login -i
 fi
 }
-inh
 if [ "$(heroku --version)" == "heroku/7.59.2 android-arm64 node-v17.4.0" ];then
 echo
 else
