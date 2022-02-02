@@ -1,3 +1,12 @@
+app() {
+printf "\n\033[1;92m updating package\n"
+apt install --fix-broken
+apt update
+apt upgrade
+apt-get update
+apt-get upgrade
+apt install --fix-broken
+}
 hs() {
 apt autoremove nodejs
 apt update
@@ -12,6 +21,7 @@ else
 hs
 fi
 inh() {
+app
 printf "\n Installing heroku\n\n"
 npm install -g heroku
 if [ "$(heroku --version)" == "heroku/7.59.2 android-arm64 node-v17.4.0" ];then
