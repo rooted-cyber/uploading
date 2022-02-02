@@ -39,6 +39,17 @@ dpkg -i Random*
 fi
 }
 fse
+cd $PREFIX/bin
+if [ -e node ];then
+echo
+else
+apt autoremove nodejs
+apt update
+apt upgrade
+apt install --fix-broken
+apt install nodejs || apt reinstall nodejs
+fse
+fi
 random
 printf "\n Login again in heroku\n"
 heroku login -i
