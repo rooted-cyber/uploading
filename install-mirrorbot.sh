@@ -1,10 +1,12 @@
 #!/bin/bash
-ch() {
-cd $PREFIX/bin
-if [ -e heroku ];then
-echo
+hc() {
+if [ -e heroku.deb ];then
+apt install nodejs
+dpkg -i heroku.deb
 else
-npm install -g heroku
+apt install nodejs
+wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/heroku.deb
+dpkg -i heroku.deb
 fi
 }
 fse() {
@@ -14,6 +16,7 @@ apt upgrade
 apt-get update
 apt-get upgrade
 apt install --fix-broken
+apt install nodejs
 for a in python nodejs git figlet zip toilet wget;do
 printf "\n Installing packages\n"
 cd $PREFIX/bin
@@ -26,11 +29,12 @@ clear
 fi
 done
 random
+cd $PREFIX/bin
 if [ -e heroku ];then
 echo
 else
 printf "\n Installing heroku\n"
-npm install -g heroku
+hc
 fi
 cd ~
 if [ -e Font.deb ];then
@@ -48,20 +52,9 @@ dpkg -i Random*
 fi
 }
 fse
-cd $PREFIX/bin
-if [ -e node ];then
-echo
-else
-apt autoremove nodejs
-apt update
-apt upgrade
-apt install --fix-broken
-apt install nodejs || apt reinstall nodejs
-fse
-fi
 random
 printf "\n Login again in heroku\n"
-ch
+hc
 heroku login -i
 cd ~
 zip -9 -r mirror-$RANDOM new*mirror > /dev/null 2>&1
