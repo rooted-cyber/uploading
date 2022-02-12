@@ -1,3 +1,4 @@
+#!/bin/bash
 a() {
 printf "\n\033[1;92m Updating package..\n\n"
 apt install --fix-broken
