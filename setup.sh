@@ -19,6 +19,7 @@ printf "\n\n Installing $ab\n\n"
 apt install $ab || apt reinstall $ab
 apt install --fix-broken
 fi
+done
 }
 dei() {
 abb
