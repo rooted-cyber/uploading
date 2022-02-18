@@ -15,6 +15,7 @@ apt update
 apt upgrade
 apt-get update
 apt-get upgrade
+apt install wget
 apt install nodejs
 apt install --fix-broken
 }
