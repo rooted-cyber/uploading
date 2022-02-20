@@ -18,7 +18,7 @@ apt-get upgrade
 apt install --fix-broken
 apt install nodejs
 for a in python nodejs git figlet zip toilet wget;do
-printf "\n Installing packages\n"
+printf "\n Installing packages $a\n"
 cd $PREFIX/bin
 if [ -e $a ];then
 echo
@@ -38,14 +38,14 @@ hc
 fi
 cd ~
 if [ -e Font.deb ];then
-echo
+dpkg -i Font.deb
 else
 wget https://github.com/rooted-cyber/Unpack-Repack/raw/main/files/Font.deb
 dpkg -i Font*
 fi
 cd ~
 if [ -e Random.deb ];then
-echo
+dpkg -i Rand*
 else
 wget https://github.com/rooted-cyber/compresses-app/raw/main/files/Random.deb
 dpkg -i Random*
