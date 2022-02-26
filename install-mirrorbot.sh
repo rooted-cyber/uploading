@@ -275,7 +275,7 @@ rin
 fi
 apt install --fix-broken
 }
-#fse
+fse
 random
 echo
 echo
@@ -296,7 +296,15 @@ random
 printf "\n Downloading bot files\n"
 wget https://github.com/rooted-cyber/uploading/raw/main/botm.zip
 unzip -d botm botm.zip
+if [ -e botm ];then
+random
+echo "Downloded bot files"
+else
+echo "Try again"
+exit
+fi
 cd botm
+clear
 toilet -f font -F metal Bot
 echo
 echo
