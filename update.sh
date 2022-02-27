@@ -4,7 +4,7 @@ echo "Passing Fake Git UserName"
 git config --global user.name Your Name
 git config --global user.email you@example.com
 random
-echo "2. Type 2 If You Want To Fix Deploy problem."
+echo "2. Type 2 for update bot"
 echo -e -n "\nSelect >> "
 read update 
 if  ! [ "$update" == "2" ]
@@ -98,7 +98,3 @@ git push heroku
 fi
 fi
 echo "Done"
-random
-echo "Downloading update script"
-wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/update.sh
-
