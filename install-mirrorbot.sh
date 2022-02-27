@@ -5,6 +5,12 @@ printf "\033[0m"
 gc() {
 printf "\033[1;92m"
 }
+cfoz() {
+if [ -e new-$fdn ];then
+zip -9 -r mirror-$RANDOM$RANDOM new-$fdn > /dev/null 2>&1
+rm -rf new-$fdn
+fi
+}
 allv() {
 random
 printf "\n 
@@ -55,7 +61,7 @@ $(random)Your$(wh) OWNER_ID : $own
 $(random)Your$(wh) TOKEN_PICKLE_URL : $tkp
 $(random)Your$(wh) INDEX_URL : $iu
 "
-cd ~/new*mirror/botm > /dev/null 2>&1
+cd ~/new*$fdn/botm > /dev/null 2>&1
 cat >> config.env << EOF
 BOT_TOKEN = "$bot"
 GDRIVE_FOLDER_ID = "$gd"
@@ -233,6 +239,7 @@ fi
 }
 fse() {
 printf "\n Updating packages\n"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/rooted-cyber/uploading/main/setup.sh)"
 apt update
 apt upgrade
 apt-get update
@@ -288,10 +295,19 @@ n|N)random;echo "Wait for login heroku";heroku login -i ;;
 *)echo ;;
 esac
 cd ~
-zip -9 -r mirror-$RANDOM new*mirror > /dev/null 2>&1
+cfoz
 rm -rf new*mirror > /dev/null 2>&1
-mkdir new-$RANDOM-mirror
-cd new*mirror
+random
+clear
+printf %s "Enter folder name "
+wh
+read fdn
+if [ $fdn ];then
+zip -9 -r mirror-$RANDOM$RANDOM new-$fdn > /dev/null 2>&1
+rm -rf new-$fdn > /dev/null 2>&1
+mkdir new-$fdn
+cd new*$fdn
+fi
 random
 printf "\n Downloading bot files\n"
 wget https://github.com/rooted-cyber/uploading/raw/main/botm.zip
