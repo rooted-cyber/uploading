@@ -30,6 +30,9 @@ tgcrypto
 youtube-search-python==1.6.1
 yt-dlp
 pygments
+redis
+telethon
+pyultroid
 python-Levenshtein
 fuzzywuzzy
 numpy
