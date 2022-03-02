@@ -42,3 +42,4 @@ dpkg -i Font.deb
 fi
 }
 dei
+pip install --upgrade pip
