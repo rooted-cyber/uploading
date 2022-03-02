@@ -1,7 +1,6 @@
-#!/usr/bin/env bash
-sh -c sh -c "$(curl -fsSl https://raw.githubusercontent.com/rooted-cyber/uploading/main/setup.sh)"
+sh -c "$(curl -fsSl https://raw.githubusercontent.com/rooted-cyber/uploading/main/setup.sh)"
 cd ~
-if [ -e Ultroid ]then
+if [ -e Ultroid ];then
 random
 echo " Alredy clone Ultroid.."
 random
