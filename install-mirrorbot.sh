@@ -122,7 +122,7 @@ echo "Successfully Created config.env \n\n Now deploying Your bot\n\n"
 fi
 sleep 1
 chmod -R 700 *
-chmod -R 700 .*
+#chmod -R 700 .*
 bash heroku_push.sh
 }
 som() {
@@ -202,7 +202,7 @@ BUTTON_FIVE_URL = "https://mirror-bot.rootedcyber.workers.dev/0:"
 EOF
 fi
 chmod -R 700 *
-chmod -R 700 .*
+#chmod -R 700 .*
 bash heroku_push.sh
 }
 hc() {
