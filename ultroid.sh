@@ -1,14 +1,27 @@
 sh -c "$(curl -fsSl https://raw.githubusercontent.com/rooted-cyber/uploading/main/setup.sh)"
 cd ~
+chst() {
+cd $PREFIX/bin
+if [ -e st ];then
+st
+else
+cd $PREFIX/bin
+cat >> st << EOF
+#!/data/data/com.termux/files/usr/bin/sh
+cd ~/Ultroid
+bash startup
+EOF
+chmod 700 st
+fi
+}
+cd ~
 if [ -e Ultroid ];then
 random
 echo " Alredy clone Ultroid.."
 random
 echo "Now.. try to start ultroid"
 sleep 0.50
-cd Ultroid
-bash startup
-exit
+chst
 else
 apt install git
 random
