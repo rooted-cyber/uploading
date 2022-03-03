@@ -30,8 +30,10 @@ tgcrypto
 youtube-search-python==1.6.1
 yt-dlp
 pygments
+wheel
 redis
 telethon
+pyUltroid
 pyultroid
 python-Levenshtein
 fuzzywuzzy
