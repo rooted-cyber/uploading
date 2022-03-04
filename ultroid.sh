@@ -1,3 +1,4 @@
+echo "Ulttoid requirement updating"
 sh -c "$(curl -fsSl https://raw.githubusercontent.com/rooted-cyber/uploading/main/setup.sh)"
 cd ~
 chst() {
@@ -6,7 +7,7 @@ if [ -e st ];then
 st
 else
 cd $PREFIX/bin
-cat >> st << EOF
+cat >> ub << EOF
 #!/data/data/com.termux/files/usr/bin/sh
 cd ~/Ultroid
 bash startup
@@ -39,6 +40,7 @@ git clone -b dev https://github.com/TeamUltroid/Ultroid
 random
 echo "Installing Ultroid requirement"
 wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/req.txt
+wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/r.sh
 pip install wheel
 pip install pyproject.toml
 pip install https://github.com/New-dev0/Telethon/archive/Artifact.zip
@@ -48,6 +50,7 @@ pip install git+https://github.com/New-dev0/instagrapi.git
 pip install git+https://github.com/buddhhu/img2html.git
 pip install gitpython==3.1.23
 pip install git+https://github.com/programmingerror/heroku3.py.git
+bash r.sh
 pip install -r req.txt
 cd ~/Ultroid
 bash resources/startup/termux.sh
