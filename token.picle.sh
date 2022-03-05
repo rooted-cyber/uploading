@@ -2,7 +2,7 @@ random
 echo "Downloading Requirements.."
 cd ~
 wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/install.sh
-wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/pickle.py
+wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/picle.py
 bash install.sh
 random
 echo "Generating token.pickle...."
