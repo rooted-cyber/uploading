@@ -3,7 +3,7 @@ sh -c "$(curl -fsSl https://raw.githubusercontent.com/rooted-cyber/uploading/mai
 cd ~
 chst() {
 cd $PREFIX/bin
-if [ -e st ];then
+if [ -e ub ];then
 st
 else
 cd $PREFIX/bin
@@ -12,7 +12,7 @@ cat >> ub << EOF
 cd ~/Ultroid
 bash startup
 EOF
-chmod 700 st
+chmod 700 ub
 fi
 }
 cd ~
@@ -26,7 +26,7 @@ chst
 else
 apt install git
 random
-echo "Creating shortcut file : st"
+echo "Creating shortcut file : ub"
 cd $PREFIX/bin
 cat >> st << EOF
 #!/data/data/com.termux/files/usr/bin/sh
@@ -51,6 +51,9 @@ pip install git+https://github.com/buddhhu/img2html.git
 pip install gitpython==3.1.23
 pip install git+https://github.com/programmingerror/heroku3.py.git
 bash r.sh
+clear
+random
+echo "Installing "
 pip install -r req.txt
 cd ~/Ultroid
 bash resources/startup/termux.sh
