@@ -18,6 +18,8 @@ else
 apt install --fix-broken
 printf "\n\n Installing $ab\n\n"
 apt install $ab || apt reinstall $ab
+pkg install $ab
+pkg install --fix-broken
 apt install --fix-broken
 fi
 done
