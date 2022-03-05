@@ -26,7 +26,7 @@ if [ -e "credentials.json" ];then
 random
 echo "open this link"
 echo
-python pickle.py
+python picle.py
 else
 sleep 1
 echo "\033[1;91m Copy credentials.json file in  $HOME"
