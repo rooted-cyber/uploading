@@ -1,9 +1,18 @@
+sh -c "$(curl -fsSl https://raw.githubusercontent.com/rooted-cyber/uploading/main/setup.sh)"
 random
 echo "Downloading Requirements.."
 cd ~
-wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/install.sh
-wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/picle.py
+if [ -e install.sh ];then
 bash install.sh
+else
+wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/install.sh
+bash install.sh
+fi
+if [ -e picle.py ];then
+echo
+else
+wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/picle.py
+fi
 random
 echo "Generating token.pickle...."
 echo
