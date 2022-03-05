@@ -4,7 +4,7 @@ cd ~
 chst() {
 cd $PREFIX/bin
 if [ -e ub ];then
-st
+ub
 else
 cd $PREFIX/bin
 cat >> ub << EOF
