@@ -4,6 +4,8 @@ printf "\n\033[1;92m Updating package..\n\n"
 apt install --fix-broken
 apt update
 apt upgrade
+pkg update
+pkg upgrade
 apt-get update
 apt-get upgrade
 apt install --fix-broken
