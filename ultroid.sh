@@ -27,13 +27,7 @@ else
 apt install git
 random
 echo "Creating shortcut file : ub"
-cd $PREFIX/bin
-cat >> st << EOF
-#!/data/data/com.termux/files/usr/bin/sh
-cd ~/Ultroid
-bash startup
-EOF
-chmod 700 st
+chst
 cd ~
 random
 git clone -b dev https://github.com/TeamUltroid/Ultroid
