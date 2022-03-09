@@ -35,8 +35,8 @@ pip install yt-dlp
 pip install pygments
 pip install wheel
 pip install redis
-pip install telethon
-pip install pyUltroid
+pip install https://github.com/New-dev0/Telethon/archive/Artifact.zip
+#pip install pyUltroid
 pip install pyultroid
 pip install python-Levenshtein
 pip install fuzzywuzzy
