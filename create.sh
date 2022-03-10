@@ -1,4 +1,14 @@
-echo -e "\033[1;92m Creating .env "
+random
+echo "Creating .env file"
+echo
+echo
+yl() {
+printf "\033[1;93m"
+}
+wh() {
+printf "\033[0m"
+}
+#echo -e "\033[1;92m Creating .env "
 #echo -e -n "APP_ID : \033[0m"
 #read ai
 #if [ $ai ];then
@@ -6,18 +16,25 @@ echo -e "\033[1;92m Creating .env "
 #fi
 #read ha
 #if [ $ha ];then
-echo -e -n "\033[1;93mSESSION : \033[0m "
+yl
+printf %s "SESSION : "
+wh
 read sa
 if [ $sa ];then
-echo -e -n "\033[1;93mREDIS_URI : \033[0m "
+yl
+printf %s "REDIS_URI : "
+wh
 fi
 read re
 if [ $re ];then
-echo -e -n "\033[1;93mREDIS_PASSWORD : \033[0m "
+yl
+printf %s "REDIS_PASSWORD :  "
+wh
 fi
 read rp
 if [ $rp ];then
-echo -e -n "\033[1;93mBOT_TOKEN : \033[0m "
+printf %s "BOT_TOKEN : "
+wh
 fi
 read bt
 if [ $bt ];then
@@ -29,7 +46,6 @@ API_HASH=b8e50a035abb851c0dd424e14cac4c06
 SESSION=$sa
 REDIS_URI=$re
 REDIS_PASSWORD=$rp
-LOG_CHANNEL=-100722692047
 BOT_TOKEN=$bt
 EOF
 chmod 700 .env
