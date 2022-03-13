@@ -17,7 +17,7 @@ from bot import aria2, LOGGER, DOWNLOAD_DIR, TG_SPLIT_SIZE
 
 VIDEO_SUFFIXES = ("M4V", "MP4", "MOV", "FLV", "WMV", "3GP", "MPG", "WEBM", "MKV", "AVI")
 
-fs = Filesplit()
+#fs = Filesplit()
 from .exceptions import NotSupportedExtractionArchive
 
 
