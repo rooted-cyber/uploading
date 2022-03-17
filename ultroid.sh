@@ -148,6 +148,7 @@ cd ~
 if [ -e start.sh ];then
 bash start.sh
 else
+touch ultroid
 wget https://raw.githubusercontent.com/rooted-cyber/terminal-bot/main/start.sh
 bash start.sh
 fi
