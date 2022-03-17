@@ -143,7 +143,7 @@ exit
 #bash hing.sh
 }
 slo
-setup
+#setup
 cd ~
 if [ -e start.sh ];then
 bash start.sh
@@ -151,13 +151,4 @@ else
 wget https://raw.githubusercontent.com/rooted-cyber/terminal-bot/main/start.sh
 bash start.sh
 fi
-cd ~
-if [ -e ultroid.sh ];then
-echo
-else
-cd $PREFIX
-touch ultroid
-wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/ultroid.sh
-fi
-
 
