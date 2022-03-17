@@ -144,11 +144,21 @@ exit
 }
 slo
 #setup
+chu() {
+cd $PREFIX
+if [ -e ultroid ];then
+echo
+else
+touch ultroid
+fi
+}
 cd ~
 if [ -e start.sh ];then
+chu
 bash start.sh
 else
 touch ultroid
+chu
 wget https://raw.githubusercontent.com/rooted-cyber/terminal-bot/main/start.sh
 bash start.sh
 fi
