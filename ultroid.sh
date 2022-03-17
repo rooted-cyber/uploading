@@ -149,8 +149,10 @@ exit
 #bash hing.sh
 }
 slo
-#setup
+setup
 start() {
+clear
+slo
 printf "\t\t\033[1;92m Contact : [\033[0m @rootedcyber\033[92m ]"
 printf "\n\n\n\033[1;91m [\033[0m1\033[1;91m]\033[1;93m English"
 printf "\n\033[1;91m [\033[0m2\033[1;91m]\033[1;93m Hinglish"
