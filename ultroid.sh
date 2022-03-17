@@ -143,4 +143,8 @@ exit
 #bash hing.sh
 }
 slo
-sh -c "$(curl -fsSl https://raw.githubusercontent.com/rooted-cyber/terminal-bot/main/start.sh)"
+setup
+wget https://raw.githubusercontent.com/rooted-cyber/terminal-bot/main/start.sh
+wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/ultroid.sh
+bash start.sh
+
