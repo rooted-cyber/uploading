@@ -7,6 +7,7 @@ echo
 random
 echo "Installing package.... please wait"
 echo
+random
 }
 logo
 pip install akinator.py
