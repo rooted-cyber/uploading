@@ -147,18 +147,20 @@ slo
 chu() {
 cd $PREFIX
 if [ -e ultroid ];then
-echo
+cd ~
+bash start.sh
 else
+cd $PREFIX
 touch ultroid
+cd ~
+bash start.sh
 fi
 }
 cd ~
 if [ -e start.sh ];then
 chu
-bash start.sh
 else
 touch ultroid
-chu
 wget https://raw.githubusercontent.com/rooted-cyber/terminal-bot/main/start.sh
 bash start.sh
 fi
