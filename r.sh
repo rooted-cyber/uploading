@@ -28,7 +28,7 @@ pip install lottie==0.6.9
 logo
 pip install multiprocess==0.70.12.2
 pip install pyproject.toml
-pip install lxml
+#pip install lxml
 #pip install numpy==1.21.2
 pip install oauth2client==4.1.3
 logo

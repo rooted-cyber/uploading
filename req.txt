@@ -33,7 +33,6 @@ pygments
 wheel
 redis
 pyUltroid
-pyultroid
 python-Levenshtein
 fuzzywuzzy
 numpy
