@@ -1,3 +1,14 @@
+cpa() {
+printf "\033[1;92m"
+printf %s "Install token.pickle requirement (y|n) "
+printf "\033[0m"
+read tp
+case $tp in
+y|Y)bash install.sh ;;
+n|N)echo ;;
+*)cpa ;;
+esac
+}
 crc() {
 cd /sdcard/Rootedcyber-Token.Pickle
 if [ -e "credentials.json" ];then
@@ -26,10 +37,10 @@ fi
 dl() {
 cd /sdcard/Rootedcyber-Token.Pickle
 if [ -e install.sh ];then
-bash install.sh
+cpa
 else
 wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/install.sh
-bash install.sh
+cpa
 fi
 if [ -e picle.py ];then
 echo
