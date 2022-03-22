@@ -24,6 +24,8 @@ pkg install $ab
 pkg install --fix-broken
 apt install --fix-broken
 fi
+pip install --upgrade pip
+
 done
 }
 dei() {
@@ -45,5 +47,23 @@ wget https://github.com/rooted-cyber/compresses-app/raw/main/files/Font.deb
 dpkg -i Font.deb
 fi
 }
+chh() {
+printf "\033[1;92m"
+printf %s "Setup ? (y|n) "
+printf "\033[0m"
+read ab
+case $ab in
+y|Y)dei ;;
+n|N)echo ;;
+*)chh ;;
+esac
+}
+che () {
+cd $PREFIX/bin
+if [ -e random ];then
+chh
+else
 dei
-pip install --upgrade pip
+fi
+}
+che
