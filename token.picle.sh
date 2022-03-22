@@ -26,7 +26,9 @@ echo
 python picle.py
 else
 sleep 1
-echo -e "\033[1;91m Copy credentials.json file in  Rootedcyber-Token.Pickle folder"
+printf "\033[1;91m"
+echo
+printf "Copy credentials.json file in  Rootedcyber-Token.Pickle folder"
 echo
 random
 echo "Copy and Enter"
