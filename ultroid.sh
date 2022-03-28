@@ -43,7 +43,7 @@ cd ~
 random
 rm -rf Ultroid
 chst
-git clone -b dev https://github.com/TeamUltroid/Ultroid
+git clone https://github.com/TeamUltroid/Ultroid
 random
 echo "Installing Ultroid requirement"
 wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/req.txt
@@ -107,7 +107,7 @@ echo "Creating shortcut file : ub"
 chst
 cd ~
 random
-git clone -b dev https://github.com/TeamUltroid/Ultroid
+git clone https://github.com/TeamUltroid/Ultroid
 random
 echo "Installing Ultroid requirement"
 wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/req.txt
