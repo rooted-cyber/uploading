@@ -13,6 +13,18 @@ fi
 }
 allv() {
 random
+printf "\n
+$(random)
+BOT_TOKEN = $(wh)https://youtu.be/TFWgeijMVbs
+$(random)
+GDRIVE Folder id = $(wh)https://youtu.be/UH6AciiwTgc
+$(random)
+TOKEN PICLE (2022) =$(wh) https://youtu.be/Prbf0Vk_OpQ
+$(random)
+INDEX_URL =$(wh) https://youtu.be/kzTZJyY0vyI
+
+"
+random
 printf "\n 
 All require type vars:
 
@@ -299,7 +311,7 @@ cfoz
 rm -rf new*mirror > /dev/null 2>&1
 random
 clear
-printf %s "Enter folder name "
+printf %s "Enter Your name (without space) "
 wh
 read fdn
 if [ $fdn ];then
