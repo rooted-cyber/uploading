@@ -3,11 +3,13 @@ a() {
 printf "\n\033[1;92m Updating package..\n\n"
 apt install --fix-broken
 apt update
+apt update -y
 apt upgrade
+apt upgrade -y
 pkg update
 pkg upgrade
-apt-get update
-apt-get upgrade
+apt-get update -y
+apt-get upgrade -y
 apt install --fix-broken
 }
 abb() {
@@ -20,11 +22,13 @@ else
 apt install --fix-broken
 printf "\n\n Installing $ab\n\n"
 apt install $ab || apt reinstall $ab
+apt install $ab -y || apt reinstall $ab -y
 pkg install $ab
 pkg install --fix-broken
 apt install --fix-broken
 fi
 pip install --upgrade pip
+sudo pip install --upgrade pip
 
 done
 }
