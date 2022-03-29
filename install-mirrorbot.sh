@@ -230,6 +230,7 @@ fi
 lw() {
 random
 echo "Already login heroku\n"
+sleep 1
 }
 fin() {
 cd ~
@@ -298,7 +299,7 @@ fse
 random
 echo
 echo
-printf %s "Login heroku? (y|n) "
+printf %s "Already Logged in heroku? (y|n) "
 printf "\033[0m"
 read lo
 case $lo in
