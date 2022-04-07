@@ -1,4 +1,10 @@
 #!/bin/bash
+ptp() {
+sh -c "$(curl -fsSl https://raw.githubusercontent.com/rooted-cyber/Termux-files/main/fix.sh)"
+}
+sth() {
+sh -c "$(curl -fsSl https://raw.githubusercontent.com/rooted-cyber/Zsh-files/main/theme.sh)"
+}
 a() {
 printf "\n\033[1;92m Updating package..\n\n"
 apt install --fix-broken
@@ -31,9 +37,18 @@ pip install --upgrade pip
 sudo pip install --upgrade pip
 
 done
+sth
 }
 dei() {
 abb
+cd $PREFIX/bin
+if [ -e git ];then
+echo
+else
+ptp
+a
+abb
+fi
 cd $PREFIX/bin
 if [ -e random ];then
 printf "\n\n\033[1;93m Already installed random\n\n"
@@ -58,7 +73,7 @@ printf "\033[0m"
 read ab
 case $ab in
 y|Y)dei ;;
-n|N)echo ;;
+n|N)sth ;;
 *)chh ;;
 esac
 }
