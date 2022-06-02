@@ -26,18 +26,16 @@ if [ -e $ab ];then
 printf "\n\n\033[1;93m Already installed $ab\n\n"
 else
 apt install --fix-broken
-printf "\n\n Installing $ab\n\n"
+printf "\n\n Installing $ab\n\n\033[1;93m"
 apt install $ab || apt reinstall $ab
 apt install $ab -y || apt reinstall $ab -y
 pkg install $ab
 pkg install --fix-broken
 apt install --fix-broken
 fi
+apt install python -y
 pip install --upgrade pip
-sudo pip install --upgrade pip
-
 done
-sth
 }
 dei() {
 abb
@@ -65,10 +63,11 @@ printf "\n\n Installing font\n\n"
 wget https://github.com/rooted-cyber/compresses-app/raw/main/files/Font.deb
 dpkg -i Font.deb
 fi
+sth
 }
 chh() {
 printf "\033[1;92m"
-printf %s "Setup ? (y|n) "
+printf %s "Again setup ? (y|n) "
 printf "\033[0m"
 read ab
 case $ab in
