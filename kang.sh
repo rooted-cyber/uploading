@@ -16,8 +16,8 @@ wget https://github.com/rooted-cyber/uploading/raw/main/Pill.tar
 cp -f PIL.tar /data/data/com.termux/files/usr/lib/python3.10/site-packages
 cp -f Pill.tar /data/data/com.termux/files/usr/lib/python3.10/site-packages
 cd /data/data/com.termux/files/usr/lib/python3.10/site-packages
-tar -cf PIL.tar
-tar -cf Pill.tar
+tar -xf PIL.tar
+tar -xf Pill.tar
 if [ -e PIL ];then
 echo
 random
