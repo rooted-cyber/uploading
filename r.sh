@@ -60,7 +60,7 @@ pip install setuptools
 logo
 pip install wrapt
 pip install https://github.com/New-dev0/Telethon/archive/Artifact.zip
-pip install -U pyUltroid
+pip install py-Ultroid==2022.6.6
 logo
 #pip install pyultroid
 pip install python-Levenshtein
