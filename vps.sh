@@ -1,4 +1,4 @@
-openssh || pkg install openssh
+ssh || pkg install openssh
 clear
 printf "\033[1;96m Welcome to vps login: \n\n"
 y() {
