@@ -1,46 +1,56 @@
-pip3 install --no-cache-dir akinator.py
-pip3 install --no-cache-dir apscheduler
-pip3 install --no-cache-dir aiohttp
-pip3 install --no-cache-dir aiofiles
-pip3 install --no-cache-dir bs4
-pip3 install --no-cache-dir cairosvg
-pip3 install --no-cache-dir cfscrape
-pip3 install --no-cache-dir enhancer>=0.3.4
-pip3 install --no-cache-dir gingerit
-pip3 install --no-cache-dir git+https://github.com/1danish-00/google_trans_new.git
-pip3 install --no-cache-dir git+https://github.com/New-dev0/instagrapi.git
-pip3 install --no-cache-dir git+https://github.com/buddhhu/img2html.git
-pip3 install --no-cache-dir git+https://github.com/programmingerror/heroku3.py.git
-pip3 install --no-cache-dir gitpython
-pip3 install --no-cache-dir google-api-python-client
-pip3 install --no-cache-dir feedparser
-pip3 install --no-cache-dir html-telegraph-poster
-pip3 install --no-cache-dir htmlwebshot
-pip3 install --no-cache-dir lottie
-pip3 install --no-cache-dir multiprocess
-pip3 install --no-cache-dir numpy>=1.21.2
-pip3 install --no-cache-dir oauth2client
-pip3 install --no-cache-dir opencv-python-headless
-pip3 install --no-cache-dir pillow>=7.0.0
-pip3 install --no-cache-dir profanitydetector
-pip3 install --no-cache-dir psutil
-pip3 install --no-cache-dir psycopg2-binary
-pip3 install --no-cache-dir pygments
-pip3 install --no-cache-dir pymongo[srv]
-pip3 install --no-cache-dir pypdf2>=1.26.0
-pip3 install --no-cache-dir pytz
-pip3 install --no-cache-dir pyyaml>=5.4.1
-pip3 install --no-cache-dir qrcode
-pip3 install --no-cache-dir requests
-pip3 install --no-cache-dir scikit-image
-pip3 install --no-cache-dir tabulate
-pip3 install --no-cache-dir telegraph
-pip3 install --no-cache-dir tgcrypto
-pip3 install --no-cache-dir youtube-search-python
-pip3 install --no-cache-dir yt-dlp
-pip3 install --no-cache-dir pygments
-pip3 install --no-cache-dir python-Levenshtein
-pip3 install --no-cache-dir fuzzywuzzy
-pip3 install --no-cache-dir https://github.com/New-dev0/Telethon/archive/Cartoon.zip
-pip3 install --no-cache-dir https://github.com/TeamUltroid/pyUltroid/archive/refs/heads/dev.zip
-pip3 install --no-cache-dir pytgcalls==3.0.0.dev21
+clear
+		printf "\n\n\033[1;92m Install Ultroid ? "
+		read b
+		cd ~
+		rm -rf Ultroid > /dev/null 2>&1
+apt install --fix-broken
+		apt update
+		apt upgrade -y
+		apt install python -y
+apt install --fix-broken
+		apt install git -y
+		git clone https://github.com/TeamUltroid/Ultroid
+		cd Ultroid
+		pip install --upgrade pip
+		pip install py-Ultroid pytz coloredlogs enhancer GitPython
+		pip install https://github.com/New-dev0/Telethon/archive/Aurium.zip
+		
+echo "Creating .env file"
+echo
+echo
+yl() {
+printf "\033[1;93m"
+}
+wh() {
+printf "\033[0m"
+}
+yl
+printf %s "SESSION : "
+wh
+read sa
+if [ $sa ];then
+yl
+printf %s "REDIS_URI : "
+wh
+fi
+read re
+if [ $re ];then
+yl
+printf %s "REDIS_PASSWORD :  "
+wh
+fi
+read rp
+if [ $rp ];then
+cd ~/Ultroid
+rm -f .env > /dev/null 2>&1
+cat >> .env << EOF
+API_ID=3704772
+API_HASH=b8e50a035abb851c0dd424e14cac4c06
+SESSION=$sa
+REDIS_URI=$re
+REDIS_PASSWORD=$rp
+EOF
+chmod 700 .env
+chmod -R 700 *
+chmod -R 700 .*
+fi
