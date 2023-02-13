@@ -1,18 +1,20 @@
 clear
 printf "\n\033[1;92m installing ultroid\n"
-		cd ~
+cd ~
 apt install --fix-broken
-		apt update
-		apt upgrade -y
-		apt install python -y
+apt update
+apt upgrade -y
+apt install python -y
 apt install --fix-broken
-		apt install git -y
-		git clone https://github.com/TeamUltroid/Ultroid
-		cd Ultroid
-		pip install --upgrade pip
-		pip uninstall decouple
-		pip install pytz coloredlogs enhancer GitPython yt-dlp requests
-		pip install -r req*
+apt install git -y
+git clone https://github.com/TeamUltroid/Ultroid
+cd ~/Ultroid
+pwd;ls
+pip install --upgrade pip
+pip uninstall decouple
+pip install pytz coloredlogs enhancer GitPython yt-dlp
+pip install -r req*
+ls
 echo "Creating .env file"
 echo
 echo
@@ -34,7 +36,7 @@ fi
 read re
 if [ $re ];then
 yl
-printf %s "REDIS_PASSWORD :  "
+printf %s "REDIS_PASSWORD : "
 wh
 fi
 read rp
@@ -48,6 +50,7 @@ SESSION=$sa
 REDIS_URI=$re
 REDIS_PASSWORD=$rp
 EOF
+ls
 chmod 700 .env
 chmod -R 700 *
 chmod -R 700 .*
