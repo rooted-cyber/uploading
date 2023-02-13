@@ -13,6 +13,7 @@ pwd;ls
 pip install --upgrade pip
 pip uninstall decouple
 pip install pytz coloredlogs enhancer GitPython yt-dlp
+pip install requests
 pip install -r req*
 ls
 echo "Creating .env file"
