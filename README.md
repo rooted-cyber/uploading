@@ -5,5 +5,5 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/rooted-cyber/uploading/mai
 ```
 ## Ultroid
 ```
-sh -c "$curl -fssL https://raw.githubusercontent.com/rooted-cyber/uploading/main/ul/ultroid.sh)"
+sh -c "$(curl -fssL https://raw.githubusercontent.com/rooted-cyber/uploading/main/ul/ultroid.sh)"
 ```
