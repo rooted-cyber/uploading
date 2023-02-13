@@ -1,7 +1,6 @@
 clear
 printf "\n\033[1;92m installing ultroid\n"
 		cd ~
-		rm -rf Ultroid > /dev/null 2>&1
 apt install --fix-broken
 		apt update
 		apt upgrade -y
