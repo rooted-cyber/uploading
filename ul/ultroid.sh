@@ -12,7 +12,7 @@ apt install --fix-broken
 		cd Ultroid
 		pip install --upgrade pip
 		pip uninstall decouple
-		pip install pytz coloredlogs enhancer GitPython yt-dlp
+		pip install pytz coloredlogs enhancer GitPython yt-dlp requests
 		pip install -r req*
 echo "Creating .env file"
 echo
