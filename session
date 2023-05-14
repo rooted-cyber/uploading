@@ -1,0 +1,2 @@
+wget https://raw.githubusercontent.com/TeamUltroid/Ultroid/dev/resources/session/ssgen.py
+python3 ssgen.py
