@@ -34,6 +34,7 @@ echo -e -n "Password: "
 fi
 read b
 if [ "$b" ];then
+rm -f send* > /dev/null 2>&1
 cat >> sending.txt << EOF
 Send this file
 
