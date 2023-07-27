@@ -28,11 +28,11 @@ done
 }
 abb
 printf "\n instaling apktool\n"
-wget -o /bin https://github.com/rooted-cyber/uploading/raw/main/apktool/apk
+wget -O /bin https://github.com/rooted-cyber/uploading/raw/main/apktool/apk
 if [ -e /bin/apktool.jar ];then
 echo
 else
-wget -o /bin https://github.com/rooted-cyber/uploading/raw/main/apktool/apktool.jar
+wget -O /bin https://github.com/rooted-cyber/uploading/raw/main/apktool/apktool.jar
 chmod 755 /bin/apk*
 fi
 sth
