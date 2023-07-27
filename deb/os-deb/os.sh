@@ -33,7 +33,8 @@ wget -O /bin/apk https://github.com/rooted-cyber/uploading/raw/main/apktool/apk
 if [ -e /bin/apktool.jar ];then
 echo
 else
-wget -O /bin/apktool.jar https://github.com/rooted-cyber/uploading/raw/main/apktool/apktool.jar
+cd /bin
+wget https://github.com/rooted-cyber/uploading/raw/main/apktool/apktool.jar
 chmod 755 /bin/apk*
 fi
 sth
