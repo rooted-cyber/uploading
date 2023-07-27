@@ -8,3 +8,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/rooted-cyber/uploading/mai
 ```
 sh -c "$(curl -fssL https://raw.githubusercontent.com/rooted-cyber/uploading/main/ul/ultroid.sh)"
 ```
+## os-setup
+```
+sh -c "$(curl -fsSl https://raw.githubusercontent.com/rooted-cyber/uploading/main/deb/os-deb/os.sh)"
+```
