@@ -1,4 +1,5 @@
 sth() {
+cd ~
 wget https://github.com/rooted-cyber/zsh-themes/raw/main/theme.sh
 bash them*
 }
@@ -28,11 +29,11 @@ done
 }
 abb
 printf "\n instaling apktool\n"
-wget -O /bin https://github.com/rooted-cyber/uploading/raw/main/apktool/apk
+wget -O /bin/apk https://github.com/rooted-cyber/uploading/raw/main/apktool/apk
 if [ -e /bin/apktool.jar ];then
 echo
 else
-wget -O /bin https://github.com/rooted-cyber/uploading/raw/main/apktool/apktool.jar
+wget -O /bin/apktool.jar https://github.com/rooted-cyber/uploading/raw/main/apktool/apktool.jar
 chmod 755 /bin/apk*
 fi
 sth
