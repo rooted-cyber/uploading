@@ -7,7 +7,6 @@ printf "\n\033[1;92m Updating package..\n\n"
 apt install --fix-broken
 apt update
 apt update -y
-apt upgrade
 apt upgrade -y
 apt-get update -y
 apt-get upgrade -y
