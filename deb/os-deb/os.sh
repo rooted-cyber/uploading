@@ -1,3 +1,17 @@
+aps() {
+cat >> apd << EOF
+apk d *apk -o decompile
+EOF
+cat >> apb << EOF
+apk b  decompile -o recompile
+EOF
+cat >> ape << EOF
+apt install zip > /dev/null 2>&1
+zip -9 -r apk.zip decompile
+EOF
+cp ap* /bin
+chmod 755 /bin/ap*
+}
 sth() {
 cd ~
 wget https://github.com/rooted-cyber/zsh-themes/raw/main/theme.sh
@@ -36,6 +50,7 @@ else
 cd /bin
 wget https://github.com/rooted-cyber/uploading/raw/main/apktool/apktool.jar
 chmod 755 /bin/apk*
+aps
 fi
 sth
 sho() {
