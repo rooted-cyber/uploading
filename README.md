@@ -1,6 +1,6 @@
 # uploading
 
-
+## Termux-setup
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/rooted-cyber/uploading/main/setup.sh)"
 ```
@@ -11,4 +11,8 @@ sh -c "$(curl -fssL https://raw.githubusercontent.com/rooted-cyber/uploading/mai
 ## os-setup
 ```
 sh -c "$(curl -fsSl https://raw.githubusercontent.com/rooted-cyber/uploading/main/deb/os-deb/os.sh)"
+```
+## token pivkle
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/rooted-cyber/uploading/main/token-pickle.sh)"
 ```
