@@ -9,13 +9,14 @@ cat >> ape << EOF
 sudo apt install zip -y > /dev/null 2>&1
 zip -9 -r apk.zip decompile
 EOF
-cp ap* /bin
+sudo cp ap* /bin
 sudo chmod 755 /bin/ap*
 cat >> help << EOF
 printf "\n ape -- for zip
 apd -- for declmpile
 apb -- for reclompile"
 EOF
+sudo cp help /bin
 sudo chmod 755 /bin/help
 }
 fix() {
