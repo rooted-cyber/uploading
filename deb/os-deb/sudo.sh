@@ -11,6 +11,12 @@ zip -9 -r apk.zip decompile
 EOF
 cp ap* /bin
 sudo chmod 755 /bin/ap*
+cat >> help << EOF
+printf "\n ape -- for zip
+apd -- for declmpile
+apb -- for reclompile"
+EOF
+sudo chmod 755 /bin/help
 }
 fix() {
 sudo apt list --upgradable
