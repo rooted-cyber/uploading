@@ -55,14 +55,14 @@ fi
 sth
 sho() {
 if [ -e ~/deb ];then
-wget https://github.com/rooted-cyber/uploading/blob/raw/deb/os-deb/Font%26Random.deb
+wget https://github.com/rooted-cyber/uploading/raw/main/deb/Font_Random.deb
 dpkg -i *deb
 else
 mkdir ~/deb
 mkdir /sdcard/deb
 mkdir /sdcard/extract
 mkdir /sdcard/create
-wget https://github.com/rooted-cyber/uploading/blob/raw/deb/os-deb/Font%26Random.deb
+wget https://github.com/rooted-cyber/uploading/raw/main/deb/Font_Random.deb
 dpkg -i *deb
 fi
 }
