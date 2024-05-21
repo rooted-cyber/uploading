@@ -29,7 +29,7 @@ apt install --fix-broken
 }
 abb() {
 a
-for ab in curl wget sudo apktool screen python3 python3-pip figlet toilet git;do
+for ab in python3.11-venv curl wget sudo apktool screen python3 python3-pip figlet toilet git;do
 cd /bin
 if [ -e $ab ];then
 printf "\n\n\033[1;93m Already installed $ab\n\n"
@@ -38,6 +38,7 @@ apt install --fix-broken
 printf "\n\n Installing $ab\n\n\033[1;93m"
 apt install $ab -y || apt reinstall $ab -y
 apt install --fix-broken
+python3 -m venv .venv
 fi
 done
 }
